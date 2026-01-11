@@ -1,0 +1,16 @@
+{
+  "Schedule1.FamilyName": "CHAFROUD EP BAHRI",
+  "Schedule1.GivenName": "RIM",
+  "Schedule1.ApplicantBirthDate.Day": "08",
+  "Schedule1.ApplicantBirthDate.Month": "01",
+  "Schedule1.ApplicantBirthDate.Year": "1984",
+  "Schedule1.UCI": "1129825035",
+  "Schedule1.PreviousTravelInfo.TraveledOtherCountry": "true",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.CountryCode": "022",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.Location": "Bourdeaux",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.From.Month": "06",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.From.Year": "2017",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.To.Month": "06",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.To.Year": "2018",
+  "Schedule1.PreviousTravelInfo.PreviousTravelDetails.PreviousTravelDetail.PurposeOfTravel": "Work"
+}

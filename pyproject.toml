@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ircc-xfa-extractor"
+version = "1.0.0"
+description = "Extract filled data from Canadian immigration (IRCC) XFA PDF forms"
+readme = "README.md"
+authors = [
+    { name = "Adel Rzouga", email = "adel@example.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+    "Topic :: Office/Business",
+]
+keywords = ["pdf", "xfa", "immigration", "ircc", "canada", "forms", "extraction"]
+
+dependencies = [
+    "pikepdf>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/adelrzouga/ircc-xfa-extractor"
+Repository = "https://github.com/adelrzouga/ircc-xfa-extractor"
+Issues = "https://github.com/adelrzouga/ircc-xfa-extractor/issues"
+
+[project.scripts]
+ircc = "ircc_xfa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ircc_xfa*"]
+exclude = ["tests*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
